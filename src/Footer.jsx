@@ -119,7 +119,6 @@ export default function Footer() {
                 </a>
               </div>
 
-              {/* Restored Email Field */}
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-cyan-400 shrink-0" />
                 <a href="mailto:info@mohansksports.com" className="hover:text-cyan-400 transition-colors">
@@ -143,17 +142,27 @@ export default function Footer() {
         <div className="border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© {new Date().getFullYear()} Mohan SK Sports Academy. All rights reserved.</p>
           
-          <p className="flex items-center gap-1.5 text-slate-400">
-            <span>Made by</span>
+          <div className="flex flex-wrap items-center justify-center gap-3 text-slate-400">
+            <span>Made by <strong className="text-slate-200">@Xenosys Qatar</strong></span>
+            <span>•</span>
             <a 
-              href="https://www.xenosysweb.com/" 
+              href="https://xenosysweb.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-cyan-400 hover:text-cyan-300 font-bold transition-colors underline decoration-cyan-400/40 hover:decoration-cyan-400"
+              className="text-cyan-400 hover:text-cyan-300 font-semibold transition-colors underline decoration-cyan-400/40 hover:decoration-cyan-400"
             >
-              Xenosys Web Solutions
+              Xenosysweb.com
             </a>
-          </p>
+            <span>•</span>
+            <a 
+              href="https://wa.me/97470643918" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
+            >
+              WhatsApp 7064 3918
+            </a>
+          </div>
         </div>
 
       </div>
